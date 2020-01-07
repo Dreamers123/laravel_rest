@@ -29,3 +29,6 @@ Route::get('articles', function () {
 Route::get('user/{id}', function ($id) {
     return 'User '.$id;
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
