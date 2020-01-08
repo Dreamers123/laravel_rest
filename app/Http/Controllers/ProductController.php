@@ -54,13 +54,13 @@ class ProductController extends Controller
     
     public function edit(Product $product)
     {
-        //
+       
     }
 
     
     public function update(Request $request, Product $product)
     {
-        //
+          $product->update($request->all());
     }
 
     
